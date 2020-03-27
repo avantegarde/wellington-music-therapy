@@ -3,6 +3,29 @@
 ** Please use this file to add your custom styles
 **==================================================*/
 
+
+
+
+
+
+/*---------------------------------*/
+/*--------- Customer Area ---------*/
+/*---------------------------------*/
+.customer-area #page-header {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.customer-area-active .cuar-css-wrapper .navbar-toggle .icon-bar {
+    background: #444444 !important;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body.customer-area-active .cuar-css-wrapper .navbar-toggle {
+        display: none !important;
+    }
+}
+
+
 /*--- Home Buttons ---*/
 section.home-buttons [data-button] {
     margin: 0;
