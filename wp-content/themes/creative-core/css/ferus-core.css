@@ -415,38 +415,34 @@ form.bs .gform_footer .gform_button {
   padding: 5px 10px;
 }
 #news-modal.modal .modal-header .close {
-  color: #ffffff;
+  color: #46b7a5;
   opacity: 1;
   text-shadow: 0 1px 0 #000000;
 }
 #news-modal.modal .modal-header .close:hover {
-  color: #97c079;
+  color: #000000;
   opacity: 1;
 }
 #news-modal .modal-dialog {
   width: 600px;
 }
 #news-modal .modal-content {
-  background-color: #222222;
-  background-image: url('/wp-content/themes/creative-core/inc/images/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 #news-modal .modal-content .modal-body {
   padding-top: 5px;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0 1px 5px #000000;
+  color: #222222;
+  text-shadow: 0 1px 5px #ffffff;
 }
 #news-modal .modal-content .modal-body .section-title {
   margin-top: 0;
 }
-#news-modal .modal-body .gform_body input,
+/*#news-modal .modal-body .gform_body input,
 #news-modal .modal-body .gform_body textarea {
   background: rgba(0,0,0,0.8);
   color: #ffffff;
-}
+}*/
 #news-modal .modal-body .gform_footer {
   text-align: center;
 }
@@ -4216,6 +4212,7 @@ img.img-block {
   width: 100%;
   margin: 0;
   padding: 0;
+  border: none;
 }
 .must-reads-wrap .post-item .post-content .author-date {
   display: block;

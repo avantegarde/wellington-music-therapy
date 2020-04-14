@@ -3,6 +3,7 @@
 /* Enqueue Styles and Scripts */
 /******************************************************************************/
 function ferus_core_enqueue_custom_scripts() {
+    global $post;
     $asset_lightbox = get_theme_mod( 'theme_asset_lightbox' );
     $asset_masonry = get_theme_mod( 'theme_asset_masonry' );
     /*===========*/
@@ -22,7 +23,11 @@ function ferus_core_enqueue_custom_scripts() {
     /*--- JS ---*/
     /*==========*/
     wp_enqueue_script('cc-fontawesome', 'https://kit.fontawesome.com/400d5ec791.js', array(), 1.0, false);
-    //wp_enqueue_script('fc-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), 1.0, true);
+    wp_enqueue_script('fc-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), 1.0, true);
+    // remove bootstrap JS file from customer portal pages as it conflicts with their bootstrap scripts.
+    if (is_page('customer-area') || ($post->post_parent === 44) ) {
+        wp_dequeue_script('fc-bootstrap-js');
+    }
     wp_enqueue_script('fc-slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), 1.0, true);
     if ( $asset_lightbox == 1 ) {
         wp_enqueue_script('fc-lightbox', get_template_directory_uri() . '/js/featherlight.min.js', array('jquery'), 1.0, true);

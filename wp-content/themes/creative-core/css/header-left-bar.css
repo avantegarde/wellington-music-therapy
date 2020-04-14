@@ -78,7 +78,10 @@ header .tagline h2 {
  *------ Toolbar ------*
  *---------------------*/
 #toolbar {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
   width: calc(100% - 250px);
   float: left;
   clear: none;
@@ -108,14 +111,14 @@ header .tagline h2 {
   list-style: none;
   text-align: right;
 }
-#toolbar .widget ul.menu li {
+/* #toolbar .widget ul.menu li {
   display: inline-block;
   margin: 0;
   padding: 0 5px;
 }
 #toolbar .widget ul.menu li:last-of-type {
   padding-right: 0;
-}
+}*/
 #toolbar .widget.widget-woocommerce-currency-switcher {
   display: block;
   margin: 0 15px 0 0;
@@ -726,16 +729,16 @@ ul.social li {
 ul.social li a i {
   position: relative;
   display: inline-block;
-  width: 46px;
-  height: 46px;
+  width: 32px;
+  height: 32px;
   margin: 0;
   font-size: 1em;
-  line-height: 44px;
+  line-height: 32px;
   vertical-align: middle;
   text-align: center;
   background: transparent;
-  color: #adadae;
-  border:  1px dashed #adadae;
+  color: #46b7a5;
+  border:  1px solid #46b7a5;
   border-radius: 0;
   overflow: hidden;
   text-decoration: none !important;

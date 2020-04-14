@@ -109,7 +109,49 @@ get_header(); ?>
             </div>
         </section>
 
-        <section id="home-services" class="blank">
+        <section id="about-us" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6">
+                        <img src="/wp-content/themes/creative-core/inc/images/placeholder.jpg" width="800" height="500">
+                    </div>
+                    <div class="col-sm-6  col-sm-pull-6">
+                        <h3 class="mini-title">Community Partnerships</h3>
+                        <h4 class="block-left-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit nibus lorem, non rhoncus sem feugiat eu. Maecenas interdum imperdiet lacus non maximus.</h4>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Nemo enim ipsam voluptatem.</p>
+                        <div class="partnership-logos">
+                            <img src="/wp-content/themes/creative-core/inc/images/placeholder-logo.png">
+                            <img src="/wp-content/themes/creative-core/inc/images/placeholder-logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="must-reads" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-title block-title center">Must Reads</h3>
+                        <?php echo do_shortcode('[must-reads posts="3"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter-signup" class="blank">
+            <div class="parallax auto-height" data-plx-img="/wp-content/themes/creative-core/inc/images/hero.jpg">
+                <div class="container">
+                    <div class="col-md-8 col-md-offset-2 line-box center" data-col="hp-bottom-cta">
+                        <h3 class="section-title">Stay Informed!</h3>
+                        <p>Stay up to date by signing up for our newsletter.</p>
+                        <?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true" tabindex="9999"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="home-services" class="blank">
             <div class="parallax auto-height" data-plx-img="/wp-content/themes/creative-core/inc/images/hero.jpg">
                 <div class="container">
                     <div class="col-md-8 col-md-offset-2 line-box center" data-col="hp-bottom-cta">
@@ -119,7 +161,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- <section id="home-services" class="blank">
             <div class="parallax auto-height" data-plx-img="/wp-content/themes/creative-core/inc/images/hero.jpg">
@@ -164,8 +206,8 @@ get_header(); ?>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <h3 class="section-title">Join Our Mailing List</h3>
-                <p>Sign up for our SPECIALS, PROMOTIONS and UPDATES.</p>
+                <h3 class="section-title">Stay Informed!</h3>
+                <p>Stay up to date by signing up for our newsletter.</p>
                 <?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true" tabindex="9999"]'); ?>
             </div>
             <!-- <div class="modal-footer">
